@@ -1,0 +1,50 @@
+Desafio 2 - Planejamento de um site one-page
+
+1) Escolher um cliente real ou fictício
+Observações:
+- Não pode ser um site de E-commerce
+- Não pode ser um site que tenha login
+- Não pode ter agendamentos
+- O site é apenas institucional sem uso de
+  banco de dados ou back-end
+- O site deve ser baseado no layout do site
+  html5css3.com.br 
+
+2) Preencher o briefing  OK 
+
+3) Separar palavras chaves
+
+Medicina Integrativa
+TEA
+OZONIOTERAPIA 
+
+
+4) Escolher os tipos de fonte (google fonts)
+
+CORMORANT GARAMOND
+
+5) Escolher ícones e imagens
+**- 1 banner principal
+    1280 x 853 ou 1920 x 1080 (pequenas variações)
+ ** - 1 banner background (efeito parallax)
+    1280 x 853 ou 1920 x 1080 (pequenas variações)
+  **- foto destaque
+    400 x 400 (tamanho exato)
+ **  - ícones (redes sociais, etc)
+    48 x 48 (tamanho exato)
+ *** - Cartão (3 imagens)
+    338 x 264 px (tamanho exato)
+ ** - Logo:
+    Largura: entre 180 e 250 px
+    Altura: entre 40 e 80 px
+
+6) Paleta de cores (hexadecimal)
+
+FUNDO: 646b67
+BOTÃO: 2b3530
+LETRAS:ffffff
+
+
+7) layout feito no fotoshop do cabeçalho e do banner principal OK
+
+**8) Criar um repositório no GitHub com o nome do projeto, breve descrição selo de licença e autor  OK 
