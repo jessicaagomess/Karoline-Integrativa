@@ -1,0 +1,169 @@
+/* Layout */
+ 
+/* Variáveis */
+ 
+:root {
+    --verdeescuro: #172b20;
+    --preto: #000000;
+    --branco: #ffffff;
+    --verdeescuro: #062206;
+    --dourado: #c2a362;
+    --rosaqueimado: #072413;
+    --verdeclarinho: #133620;
+}
+ 
+/* CSS - reset */
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: "Lobster", sans-serif;
+}
+ 
+.container {
+    display: flex;
+    margin: 0 auto;
+
+}
+ 
+/* Fim do Layout*/
+ 
+ 
+/* Smartphone portrait */
+ 
+/* Cabeçalho */
+header {
+    height: 70px;
+    background-color: var(--verdeclarinho);
+}
+ 
+#logo img {
+    width: 128px;
+    height: 120px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+ 
+#check {
+    display: none;
+}
+ 
+label {
+    color: rgba(15, 90, 53, 0.75);
+    font-size: 3rem;
+    position: fixed;
+    right: 15px;
+    top: 5px;
+
+}
+
+nav ul{
+    height: 100vh;
+    background-color: rgba(32, 54, 39, 0.9);
+    position: fixed;
+    top: 70px;
+    right: -48%;
+    width: 48%;   
+    transition:all 0.5s;
+
+
+}
+
+/*** ação para caixa checkbox */ /*Quando selecionado mudar propriedades */
+
+#check:checked~ul {
+    right: 0px;    
+}
+
+
+nav ul li {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--verdeclarinho);    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dourado);
+}
+
+ 
+/* Fim smartphone portrait*/
+
+/* Smartfone Landscape >>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 576px) {
+
+    /* Layout */
+    .container{
+        max-width: 540px;
+    }
+    /* CABEÇALHO */
+    nav ul {
+        width: 40%;
+        right: -40%;
+    }
+
+}
+
+/* Fim smartphone portrait*/
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+
+    /* Layout */
+    .container{
+        max-width: 720px;
+
+    }
+
+}
+
+/* Fim - Tablet Portrait <<<<<<<<<<<<<<<<<*/
+
+/* Tablet Lanscape >>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+
+    /* Layout */
+    .container{
+        max-width: 930px;     
+    }
+
+}
+
+/* Fim - Tablet Landscape <<<<<<<<<<<<<<<<<*/
+
+/* Notebook - PC >>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+
+    /* Layout */
+    .container{
+        max-width: 1140px;
+        
+    }
+
+}
+
+/* Fim - Notebook - PC Landscape <<<<<<<<<<<<<<<<<*/
+ 
+
+/* FULL HD/ 4K  >>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1400px) {
+
+    /* Layout */
+    .container{
+        max-width: 1320px;
+        background-color: #94a822;
+        
+    }
+
+}
+
+/* Fim - Notebook - PC Landscape <<<<<<<<<<<<<<<<<*/
+
+ 
