@@ -1,6 +1,9 @@
+![GitHub License](https://img.shields.io/github/license/jessicaagomess/Karoline-Integrativa)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fjessicaagomess.github.io%2FKaroline-Integrativa%2F)
+
 # Karoline-Integrativa
 #🩺 Enfermeira Karol Dantas
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fjessicaagomess.github.io%2FKaroline-Integrativa%2F)
+
 
 
 **Especialista em Medicina Integrativa, Ortomolecular, Ozonioterapia e Cuidados Específicos para Autismo, Síndrome de Down e TEA.**
