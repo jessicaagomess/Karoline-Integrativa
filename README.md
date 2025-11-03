@@ -47,6 +47,6 @@ Promover **saúde, equilíbrio e bem-estar** por meio de práticas seguras, base
 
 > _“Cuidar é um ato de amor, e a enfermagem é a arte de transformar o cuidado em cura.”_  
 > — **Karol Dantas**
->
-> ## Acessar o site
-> ![](./img/qrcode.png)
+
+## Acessar o site
+![](./img/qrcode.png)
