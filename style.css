@@ -120,7 +120,7 @@ main .container {
 
 h1 {
     font-size: 1.7rem;
-    color: var(--rosaqueimado);
+    color: var(--branco);
     text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-top: -50px;
@@ -221,42 +221,38 @@ h2 {
 }
 
 /* PDF */
- 
+
 #pdf {
     padding: 40px 13px;
     background: url(./IMG/imagem\ fundo.png);
     background-size: cover;
     background-position: center;
 }
- 
+
 #pdf .container {
     display: flex;
     flex-direction: column;
 }
- 
+
 #pdf img {
     display: none;
 }
- 
+
 #pdf h2 {
     color: var(--branco);
     margin-bottom: 15px;
     font-size: 1.7rem;
 }
- 
+
 #pdf p {
     margin-bottom: 50px;
     color: var(--branco);
     font-size: 1.2rem;
 }
- 
+
 #pdf .btn {
     font-size: 1.3rem;
 }
-
-
-
-
 
 /* Fim smartphone portrait*/
 
@@ -309,7 +305,7 @@ h2 {
 
     main .container {
         height: 100%;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
 
@@ -377,16 +373,11 @@ h2 {
 
     /* Sobre */
 
-#youtube iframe {
-    height: 315px;
-    width: 560px;
+    #youtube iframe {
+        height: 315px;
+        width: 560px;
+    }
 }
-
-}
-
-
-
-
 
 /* Fim - Tablet Portrait <<<<<<<<<<<<<<<<<*/
 
@@ -464,6 +455,11 @@ h2 {
 
     }
 
+    main .container {
+        display: flex;
+        flex-direction: column;
+    }
+
     #hero img {
         width: 400px;
         height: 400px;
@@ -493,51 +489,47 @@ h2 {
     }
 
     #sobre h2 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     #sobre p {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     /* PDF */
- 
-#pdf {
-    padding: 40px 13px;
-    background: url(./IMG/imagem\ fundo.png);
-    background-size: cover;
-    background-position: center;
-}
- 
-#pdf .container {
-    display: flex;
-    flex-direction: column;
-}
- 
-#pdf img {
-    display: none;
-}
- 
-#pdf h2 {
-    color: var(--branco);
-    margin-bottom: 15px;
-    font-size: 1.7rem;
-}
- 
-#pdf p {
-    margin-bottom: 50px;
-    color: var(--branco);
-    font-size: 1.5rem;
-}
- 
-#pdf .btn {
-    font-size: 1.5rem;
-}
+    #pdf {
+        background-attachment: fixed;
+    }
 
+    #pdf img {
+        display: flex;
+        border-radius: 20%;
+        height: 200px;
+        width: 200px;
+    }
+
+    #pdf .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #qrcode {
+        margin-left: 20px;
+    }
     
 
+    #pdf #text h2 {
+        font-size: 2.5rem;
+    }
 
+    #pdf #text p {
+        font-size: rem;
+    }
 }
+
+
 
 
 
@@ -578,6 +570,7 @@ h2 {
     #sobre p {
         font-size: 1.7rem;
     }
+
 
 }
 
