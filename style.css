@@ -1,7 +1,7 @@
 /* Layout */
- 
+
 /* Variáveis */
- 
+
 :root {
     --verdeescuro: #172b20;
     --preto: #000000;
@@ -11,26 +11,26 @@
     --rosaqueimado: #072413;
     --verdeclarinho: #133620;
 }
- 
+
 /* CSS - reset */
- 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- 
+
 body {
     font-family: "Lobster", sans-serif;
 }
- 
+
 .container {
     display: flex;
     margin: 0 auto;
 
 }
 
-.btn{
+.btn {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 300;
@@ -40,18 +40,18 @@ body {
     border-radius: 60px;
     border: 2px solid var(--verdeclarinho)
 }
- 
+
 /* Fim do Layout*/
- 
- 
+
+
 /* Smartphone portrait */
- 
+
 /* Cabeçalho */
 header {
     height: 70px;
     background-color: var(--verdeclarinho);
 }
- 
+
 #logo img {
     width: 128px;
     height: 120px;
@@ -59,11 +59,11 @@ header {
     margin-left: 10px;
 
 }
- 
+
 #check {
     display: none;
 }
- 
+
 label {
     color: rgba(15, 90, 53, 0.75);
     font-size: 3rem;
@@ -73,22 +73,23 @@ label {
 
 }
 
-nav ul{
+nav ul {
     height: 100vh;
     background-color: rgba(32, 54, 39, 0.9);
     position: fixed;
     top: 70px;
     right: -48%;
-    width: 48%;   
-    transition:all 0.5s;
+    width: 48%;
+    transition: all 0.5s;
 
 
 }
 
-/*** ação para caixa checkbox */ /*Quando selecionado mudar propriedades */
+/*** ação para caixa checkbox */
+/*Quando selecionado mudar propriedades */
 
 #check:checked~ul {
-    right: 0px;    
+    right: 0px;
 }
 
 
@@ -96,7 +97,7 @@ nav ul li {
     list-style: none;
     padding: 20px;
     text-align: center;
-    border-bottom: 1px solid var(--verdeclarinho);    
+    border-bottom: 1px solid var(--verdeclarinho);
 }
 
 nav ul li a {
@@ -104,8 +105,13 @@ nav ul li a {
     color: var(--dourado);
 }
 
+/* Principal */
+
 main .container {
-    height: 100%;
+    height: 60vh;
+    background: url(./IMG/bannerprincipal1.png);
+    background-size: cover;
+    background-position: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -113,11 +119,21 @@ main .container {
 }
 
 h1 {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    color: var(--rosaqueimado);
+    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 5px;
+
 }
 
 h2 {
     font-size: 1.3rem;
+    color: var(--branco);
+    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(7, 7, 7, 0.15), 0px 15px 15px rgba(250, 246, 246, 0.1), 0px 20px 20px rgba(226, 224, 224, 0.1);
+    text-align: center;
+
 }
 
 /* DESTAQUE */
@@ -148,134 +164,228 @@ h2 {
     margin-bottom: 15px;
     color: var(--rosaqueimado);
     font-size: 2.5rem;
-     text-shadow: 0px 5px 10px var(--branco),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 5px 10px var(--branco), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 
 }
+
+#hero-text p {
+    color: var(--branco);
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+
+
 .topics {
     display: flex;
     align-items: center;
     margin-top: 15px;
 
 }
+
 .topics p {
     margin-left: 15px;
+    font-size: 1.2rem;
+    font-weight: 590;
 
+
+}
+
+/* Sobre */
+
+#sobre {
+    padding: 40px 13px;
+    background-color: var(--rosaqueimado);
+}
+
+#sobre .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#sobre iframe {
+    width: 340px;
+    height: 191px;
+}
+
+#sobre p {
+    margin-bottom: 25px;
+}
+
+#sobre p {
+    color: var(--branco);
+}
+
+#sobre h2 {
+    color: var(--branco);
+    margin-bottom: 20px;
+}
+
+/* PDF */
+ 
+#pdf {
+    padding: 40px 13px;
+    background: url(./IMG/imagem\ fundo.png);
+    background-size: cover;
+    background-position: center;
+}
+ 
+#pdf .container {
+    display: flex;
+    flex-direction: column;
+}
+ 
+#pdf img {
+    display: none;
+}
+ 
+#pdf h2 {
+    color: var(--branco);
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+}
+ 
+#pdf p {
+    margin-bottom: 50px;
+    color: var(--branco);
+    font-size: 1.2rem;
+}
+ 
+#pdf .btn {
+    font-size: 1.3rem;
 }
 
 
 
 
- 
+
 /* Fim smartphone portrait*/
 
 /* Smartfone Landscape >>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
 
     /* Layout */
-    .container{
+    .container {
         max-width: 540px;
     }
+
     /* CABEÇALHO */
     nav ul {
         width: 40%;
         right: -40%;
     }
 
+    /* Principal */
+    main {
+        height: 80vh;
+        background: url(./IMG/bannerprincipal1.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #logo img {
+        height: 90px;
+    }
+
+    main h1 {
+        color: var(--branco);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+
+
+
+    }
+
+    main h2 {
+        color: var(--dourado);
+        font-size: 1.85rem;
+        font-weight: 900;
+        text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 15px;
+        text-align: center;
+
+
+    }
+
+    main .container {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    /* Destaque */
+    #destaque {
+        padding: 50px 0px;
+    }
+
+    #destaque .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #hero {
+        text-align: left;
+
+    }
+
+    #hero img {
+        width: 200px;
+        height: 200px;
+        margin: 0px 20px 0px -50px;
+    }
+
+    .topics {
+        display: none;
+
+    }
+
 }
-/* Principal */
-main{
-    height: 80vh;
-    background: url(./IMG/bannerprincipal1.png);
-    background-size: cover;
-    background-position: center;   
-}
 
-#logo img {
-    height: 90px;
-}
-
-main h1 {
-    color: var(--branco);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-
-
-
-}
-
-main h2{
-    color: var(--dourado);
-    font-size: 1.85rem;
-    font-weight: 900;
-    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
-    text-align: center;
-
-
-}
-
-main .container {
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-/* Destaque */
-#destaque {
-    padding: 50px 0px;
-}
-
-#destaque .container {
-    flex-direction: row;
-    align-items: center;
-}
-
-#hero {
-    text-align: left;
-
-}
-
-#hero img {
-    width: 200px;
-    height: 200px;
-    margin: 0px 20px 0px -50px;
-}
-
-.topics {
-    display: none;
-
-}
-
-
-
-
-
-/* Fim smartphone portrait*/
+/* Fim smartphone Landscape*/
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
 
     /* Layout */
-    .container{
+    .container {
         max-width: 720px;
 
     }
+
     /* Cabeçalho */
     nav ul {
         width: 40%;
         right: -40%
     }
+
     /* Principal */
     main h1 {
         font-size: 4rem;
     }
-    main h2{
+
+    main h2 {
         font-size: 2.2rem;
     }
+
+    /* Destaque */
+
+    #hero img {
+        margin-left: 20px;
+    }
+
+    /* Sobre */
+
+#youtube iframe {
+    height: 315px;
+    width: 560px;
 }
+
+}
+
+
+
 
 
 /* Fim - Tablet Portrait <<<<<<<<<<<<<<<<<*/
@@ -284,8 +394,15 @@ main .container {
 @media (min-width: 768px) {
 
     /* Layout */
-    .container{
-        max-width: 930px;     
+    .container {
+        max-width: 930px;
+    }
+
+    /* Sobre */
+
+    #youtube iframe {
+        height: 315px;
+        width: 560px;
     }
 
 }
@@ -296,26 +413,30 @@ main .container {
 @media (min-width: 1200px) {
 
     /* Layout */
-    .container{
+    .container {
         max-width: 1140px;
         justify-content: space-between;
 
-        
+
     }
+
     /* Cabeçalho */
-    header{
+    header {
         height: 100px;
     }
+
     #logo img {
         width: 190px;
         height: 190px;
 
     }
+
     label {
         display: none;
 
     }
-    nav ul{
+
+    nav ul {
         position: static;
         width: 100%;
         height: auto;
@@ -324,12 +445,12 @@ main .container {
 
     }
 
-    nav ul li{
+    nav ul li {
         border: 0;
         float: left;
     }
 
-    nav ul li a{
+    nav ul li a {
         font-size: 1.3rem;
     }
 
@@ -343,46 +464,121 @@ main .container {
 
     }
 
+    #hero img {
+        width: 400px;
+        height: 400px;
+    }
 
+    .topics {
+        display: flex;
+
+    }
+
+    #destaque {
+        background-attachment: fixed;
+    }
+
+    /* Sobre */
+
+    #sobre .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #youtube iframe {
+        height: 315px;
+        width: 560px;
+    }
+
+    #sobre h2 {
+        font-size: 2.5rem;
+    }
+
+    #sobre p {
+        font-size: 1.7rem;
+    }
+
+    /* PDF */
+ 
+#pdf {
+    padding: 40px 13px;
+    background: url(./IMG/imagem\ fundo.png);
+    background-size: cover;
+    background-position: center;
 }
-
-#hero img {
-    width: 400px;
-    height: 400px;
-}
-
-.topics {
+ 
+#pdf .container {
     display: flex;
+    flex-direction: column;
+}
+ 
+#pdf img {
+    display: none;
+}
+ 
+#pdf h2 {
+    color: var(--branco);
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+}
+ 
+#pdf p {
+    margin-bottom: 50px;
+    color: var(--branco);
+    font-size: 1.5rem;
+}
+ 
+#pdf .btn {
+    font-size: 1.5rem;
+}
+
+    
+
 
 }
 
-#destaque {
-    background-attachment: fixed;
-}
 
 
 /* Fim - Notebook - PC Landscape <<<<<<<<<<<<<<<<<*/
- 
+
 
 /* FULL HD/ 4K  >>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1400px) {
 
     /* Layout */
-    .container{
+    .container {
         max-width: 1320px;
-       
-        
+
+
     }
+
     /* Principal */
-    main h1{
-        font-size: 6rem;
+    main h1 {
+        font-size: 7rem;
     }
-    main h2{
-        font-size: 4rem;
+
+    main h2 {
+        font-size: 3rem;
+
+    }
+
+    /* Sobre */
+
+    #youtube iframe {
+        height: 315px;
+        width: 560px;
+    }
+
+    #sobre h2 {
+        font-size: 2.5rem;
+    }
+
+    #sobre p {
+        font-size: 1.7rem;
     }
 
 }
 
 /* Fim - Notebook - PC Landscape <<<<<<<<<<<<<<<<<*/
-
- 
