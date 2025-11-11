@@ -40,6 +40,33 @@ body {
     border-radius: 60px;
     border: 2px solid var(--verdeclarinho)
 }
+/* Cartão   */
+.card {
+    width: 342px;
+    height: 490px;
+    background-color: var(--verdeclarinho);
+    margin-bottom: 25px;
+    border: 2px solid var(--rosaqueimado);
+    text-align: center;
+    border-radius: 25px;
+
+}
+
+.card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    margin: 15px 0px ;
+    color: #ffffff;
+}
+
+.card p {
+    color: var(--dourado);
+    padding: 0px 15px 30px 15px;
+
+}
 
 /* Fim do Layout*/
 
@@ -254,6 +281,22 @@ h2 {
     font-size: 1.3rem;
 }
 
+/* Cartões */
+#Tratamentos {
+    padding: 50px 0px 25px 0px;
+}
+
+#Tratamentos .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#Tratamentos p {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+
 /* Fim smartphone portrait*/
 
 /* Smartfone Landscape >>>>>>>>>>>>>>>>>>>>>> */
@@ -339,7 +382,6 @@ h2 {
     }
 
 }
-
 /* Fim smartphone Landscape*/
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>> */
@@ -383,7 +425,10 @@ h2 {
         height: 315px;
         width: 560px;
     }
+
 }
+
+
 
 /* Fim - Tablet Portrait <<<<<<<<<<<<<<<<<*/
 
@@ -401,6 +446,16 @@ h2 {
         height: 315px;
         width: 560px;
     }
+    /* Cartões */
+    #Tratamentos .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .card {
+        margin-right: 25px;
+    }
+
 
 }
 
@@ -527,11 +582,18 @@ h2 {
     
 
     #pdf #text h2 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
     #pdf #text p {
         font-size: rem;
+    }
+    /*Cartões */
+    #Tratamentos .container {
+      flex-direction: row;
+    }
+    .card {
+        margin-right: 0px; 
     }
 }
 
