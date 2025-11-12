@@ -318,7 +318,7 @@ h2 {
 
 /*Rodapé */
 address {
-    padding: 35px 10px 50px 10px;
+    padding: 30px 10px 15px 20px;
     background-color: var(--verdeclarinho);
     background-size: cover;
     background-position: center;
@@ -652,7 +652,7 @@ footer {
     }
 
     #pdf #text p {
-        font-size: rem;
+        font-size: large;
     }
     /*Cartões */
     #Tratamentos .container {
