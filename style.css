@@ -40,6 +40,7 @@ body {
     border-radius: 60px;
     border: 2px solid var(--verdeclarinho)
 }
+
 /* Cartão   */
 .card {
     width: 342px;
@@ -58,7 +59,7 @@ body {
 
 .card h2 {
     font-size: 1.3rem;
-    margin: 15px 0px ;
+    margin: 15px 0px;
     color: #ffffff;
 }
 
@@ -74,10 +75,12 @@ body {
     right: 10px;
     bottom: 1px;
 }
+
 /* Scroll suave */
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
+
 .Flex5 {
     display: flex;
     flex-direction: column-reverse;
@@ -316,51 +319,97 @@ h2 {
     margin-top: 5px;
 }
 
-/*Rodapé */
+
+
+/* ===== RODAPÉ ===== */
 address {
     padding: 30px 10px 15px 20px;
     background-color: var(--verdeclarinho);
-    background-size: cover;
-    background-position: center;
     color: #ffffff;
-    
 }
 
 
+address .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-address a {
+
+#contato,
+#endereco,
+#googleMaps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+#contato a,
+#endereco a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: #ffffff;
-
 }
 
+
 address img {
-    padding-top: 15px;
+    width: 36px;
+    height: 36px;
+    padding-top: 2px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 #iconelocal {
     display: none;
 }
 
-#dados {
-    margin: 30px 0px 15px 0px;
-}
 
-#googleMaps {
+#googleMaps iframe {
     display: none;
 }
 
+/*  FOOTER  */
 footer {
-    padding: 50px;
     background-color: darkgrey;
     color: #062206;
+    padding: 30px 10px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     text-align: center;
-
 }
 
-#social {
-    margin-bottom: 25px;
+#social img {
+    width: 30px;
+    height: 30px;
 }
+
+
+
+
+#topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#topo img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+
 
 
 /* Fim smartphone portrait*/
@@ -447,7 +496,109 @@ footer {
 
     }
 
+    /*  RODAPÉ  */
+    address {
+        padding: 30px 10px 15px 20px;
+        background-color: var(--verdeclarinho);
+        color: #ffffff;
+    }
+
+
+    address .container {
+        
+    flex-direction: column;
+
+    }
+
+
+    #contato,
+    #endereco,
+    #googleMaps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+
+    #contato a,
+    #endereco a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+
+    address img {
+        width: 36px;
+        height: 36px;
+        padding-top: 2px;
+    }
+
+
+    #contato p,
+    #endereco p {
+        margin: 4px 0;
+    }
+
+
+    #googleMaps iframe {
+        border-radius: 8px;
+        width: 300px;
+        height: 200px;
+    
+    }
+
+    /* FOOTER (parte cinza) */
+    footer {
+        background-color: darkgrey;
+        color: #062206;
+        padding: 30px 20px;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    #social img {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 25px;
+
+    }
+
+
+
+    /*  BOTÃO DE TOPO  */
+    #topo {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    #topo img {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    #topo img:hover {
+        transform: translateY(-4px);
+    }
+
+
+
+
+
 }
+
 /* Fim smartphone Landscape*/
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>> */
@@ -492,7 +643,21 @@ footer {
         width: 560px;
     }
 
-}
+
+    /* Rodapé */
+ #rodape iframe {
+    display: flex;
+    margin: 20px;
+ }
+
+ 
+ #iconemapa .container {
+    display: none;
+ }
+ }
+
+
+
 
 
 
@@ -512,18 +677,68 @@ footer {
         height: 315px;
         width: 560px;
     }
+
     /* Cartões */
     #Tratamentos .container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
     .card {
         margin-right: 25px;
     }
 
+    address {
+        padding: 30px 10px 15px 20px;
+        background-color: var(--verdeclarinho);
+        color: #ffffff;
+    }
+
+    address .container {
+       
+
+    }
+
+
+    #contato,
+    #endereco,
+    #googleMaps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+
+    address img {
+        width: 36px;
+        height: 36px;
+        padding-top: 2px;
+    }
+
+
+    #contato p,
+    #endereco p {
+        margin: 1px 0;
+
+    }
+
+
+    #googleMaps iframe {
+        border-radius: 8px;
+        width: 300px;
+        height: 200px;
+    }
+
+
 
 }
+
+
+
 
 /* Fim - Tablet Landscape <<<<<<<<<<<<<<<<<*/
 
@@ -645,7 +860,7 @@ footer {
     #qrcode {
         margin-left: 20px;
     }
-    
+
 
     #pdf #text h2 {
         font-size: 3.5rem;
@@ -654,12 +869,14 @@ footer {
     #pdf #text p {
         font-size: large;
     }
+
     /*Cartões */
     #Tratamentos .container {
-      flex-direction: row;
+        flex-direction: row;
     }
+
     .card {
-        margin-right: 0px; 
+        margin-right: 0px;
     }
 }
 
