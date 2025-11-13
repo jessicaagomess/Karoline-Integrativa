@@ -586,17 +586,7 @@ footer .container {
         width: 40px;
         height: 40px;
         cursor: pointer;
-        transition: transform 0.3s ease;
     }
-
-    #topo img:hover {
-        transform: translateY(-4px);
-    }
-
-
-
-
-
 }
 
 /* Fim smartphone Landscape*/
@@ -656,11 +646,6 @@ footer .container {
  }
  }
 
-
-
-
-
-
 /* Fim - Tablet Portrait <<<<<<<<<<<<<<<<<*/
 
 /* Tablet Lanscape >>>>>>>>>>>>>>>>>>>>>> */
@@ -695,10 +680,6 @@ footer .container {
         color: #ffffff;
     }
 
-    address .container {
-       
-
-    }
 
 
     #contato,
