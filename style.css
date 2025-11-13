@@ -88,7 +88,9 @@ html {
 }
 
 
-
+address #whats {
+    font-size: 1.7rem;
+}
 
 
 /* Fim do Layout*/
@@ -183,6 +185,7 @@ h2 {
     color: var(--branco);
     text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(7, 7, 7, 0.15), 0px 15px 15px rgba(250, 246, 246, 0.1), 0px 20px 20px rgba(226, 224, 224, 0.1);
     text-align: center;
+    margin-bottom: 25px;
 
 }
 
@@ -372,6 +375,12 @@ address img {
     display: none;
 }
 
+#social img {
+    width: 50px;
+    height: 50px;
+}
+
+
 /*  FOOTER  */
 footer {
     background-color: darkgrey;
@@ -385,11 +394,6 @@ footer .container {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-}
-
-#social img {
-    width: 30px;
-    height: 30px;
 }
 
 
@@ -587,6 +591,11 @@ footer .container {
         height: 40px;
         cursor: pointer;
     }
+
+    #social img {
+    width: 50px;
+    height: 50px;
+}
 }
 
 /* Fim smartphone Landscape*/
@@ -680,7 +689,11 @@ footer .container {
         color: #ffffff;
     }
 
-
+    address .container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
 
     #contato,
     #endereco,
@@ -859,6 +872,12 @@ footer .container {
     .card {
         margin-right: 0px;
     }
+
+    #social img {
+    width: 70px;
+    height: 70px;
+}
+
 }
 
 
