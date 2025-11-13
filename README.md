@@ -1,5 +1,13 @@
 ![GitHub License](https://img.shields.io/github/license/jessicaagomess/Karoline-Integrativa)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fjessicaagomess.github.io%2FKaroline-Integrativa%2F)
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="CSS válido!" />
+    </a>
+</p>
+     
 
 # Karoline-Integrativa
 #🩺 Enfermeira Karol Dantas
